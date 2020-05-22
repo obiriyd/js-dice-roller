@@ -7,15 +7,27 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="main_container">
-        <p>
-            Enter a number of dice: <input type="text" id="numberOfDice" placeholder="eg. 4"> <input type="button" id="rollButton" value="Roll!"> <br/>
-            Total: <span id="totalRoll"></span>
-        </p>
-        <p>
-            <input type="button" value="Show All Rolls">
-        </p>
-        <div id="allRollsContainer"></div>
+    <div id="outer-container">
+        <div id="main-container">
+            <div id="header">
+                JS Dice Roller Game
+            </div>
+            <div id="input-container">
+                <div id="numDice">Number of Dice: <br/><input type="number" id="numberOfDice"></div>
+                <div id="numSides">Sides of Each Die: <br/><input type="number" id="dieSides"></div>
+            </div>
+            <div id="buttons-container">
+                <button id="rollButton">Roll!</button>
+                <button id="resetButton">Reset</button> <br/>
+            </div>
+            <div id="totals-container">
+                <strong>Total Rolled:</strong> <span id="totalRolled"></span>
+            </div>
+            <div id="list-container">
+                <button id="showRollsButton">Show All Rolls</button>
+                <ol id="allRollsList"></ol>
+            </div>
+        </div>
     </div>
 <script src="assets/js/main.js"></script>
 </body>
